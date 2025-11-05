@@ -23,7 +23,8 @@ jobs:
         with:
           node-version: 20
           cache: npm
-      - run: npm ci
+      - run: npm install
+
       - run: npm run build
       # ensures refresh works properly
       - run: cp dist/index.html dist/404.html
